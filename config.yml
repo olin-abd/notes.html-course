@@ -1,0 +1,16 @@
+title: notes.html
+description: My HTML notes
+template:
+  repo: notes.html-template
+  name: notes.html
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
